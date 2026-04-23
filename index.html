@@ -15,33 +15,63 @@ body {
     color: #e5e5e5;
 }
 
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
 /* HERO */
 .hero {
-    padding: 80px 60px;
+    text-align: center;
+    padding: 40px 20px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin: 0;
+    font-size: 36px;
     color: #fff;
 }
 
+.hero p {
+    color: #9ca3af;
+}
+
 .profile {
-    width: 130px;
+    width: 120px;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 /* SECTION */
 .section {
-    padding: 80px 60px;
+    margin-top: 50px;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #9ca3af;
 }
 
 /* GRID */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
+}
+
+/* DESKTOP GRID */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
 }
 
 /* IMAGE */
@@ -52,18 +82,19 @@ img {
 }
 
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
-/* TEXT */
-p {
+/* LIST */
+ul {
     color: #9ca3af;
+    line-height: 1.6;
 }
 
 /* FOOTER */
 footer {
-    padding: 40px;
     text-align: center;
+    padding: 30px;
     color: #666;
 }
 </style>
@@ -71,71 +102,80 @@ footer {
 
 <body>
 
+<div class="container">
+
+<!-- HERO -->
 <div class="hero">
     <h1>Yasir Ahmed S</h1>
     <p>Civil Design Engineer | BIM Modeler</p>
     <img src="profile.jpg" class="profile">
 
-    <p>📍 Ballari, Karnataka, India</p>
+    <p>📍 Ballari, Karnataka</p>
     <p>📞 +91 7019830916</p>
     <p>✉️ yasirkhansyz0602@gmail.com</p>
 </div>
 
+<!-- ABOUT -->
 <div class="section">
     <h2>About</h2>
-    <p>Civil Engineering graduate skilled in BIM modeling, architectural design, and site execution.</p>
+    <p>
+    Civil Engineering graduate skilled in BIM modeling, architectural planning, and site execution.
+    </p>
 </div>
 
+<!-- SKILLS -->
 <div class="section">
     <h2>Skills</h2>
-    <p>AutoCAD | Revit | Navisworks | BIM Modeling | RCC Work</p>
+    <p>AutoCAD | Revit | Navisworks | BIM | RCC</p>
 </div>
 
+<!-- EXPERIENCE -->
 <div class="section">
     <h2>Experience</h2>
     <p>Sri Sai Gandhi Construction – Site Work</p>
 </div>
 
+<!-- ACADEMIC PROJECT -->
 <div class="section">
     <h2>Academic Project</h2>
     <p><strong>3BHK Duplex BIM Project</strong></p>
     <ul>
         <li>2D drawings using AutoCAD</li>
-        <li>3D BIM model in Revit</li>
-        <li>Clash detection in Navisworks</li>
+        <li>3D BIM model using Revit</li>
+        <li>Clash detection using Navisworks</li>
         <li>Quantity takeoff for structural elements</li>
     </ul>
 </div>
 
-<!-- HVAC PROJECT -->
+<!-- HVAC -->
 <div class="section">
-    <h2>HVAC BIM Project</h2>
-    <p>Mechanical system modeling and duct layout coordination using BIM tools.</p>
+    <h2>HVAC Project</h2>
 
     <div class="grid">
         <div>
             <img src="hvac1.jpg">
-            <p>3D HVAC Model View</p>
+            <p>3D HVAC Model</p>
         </div>
 
         <div>
             <img src="hvac2.jpg">
-            <p>Wireframe / Hidden Line View</p>
+            <p>Wireframe View</p>
         </div>
     </div>
 </div>
 
-<!-- EXISTING PROJECTS -->
+<!-- OTHER PROJECTS -->
 <div class="section">
     <h2>Projects</h2>
 
     <img src="project1.jpg">
-    <p>Residential BIM Project</p>
 
     <div class="grid">
         <img src="project2.jpg">
         <img src="project3.jpg">
     </div>
+</div>
+
 </div>
 
 <footer>
