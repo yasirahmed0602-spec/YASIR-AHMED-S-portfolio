@@ -8,11 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(180deg, #0a0a0a, #111827);
-    color: #e5e5e5;
+    background: radial-gradient(circle at top, #0f172a, #020617);
+    color: #e2e8f0;
+    overflow-x: hidden;
 }
 
 /* CONTAINER */
@@ -25,36 +27,48 @@ body {
 /* HERO */
 .hero {
     text-align: center;
-    padding: 40px 20px;
+    padding: 80px 20px;
 }
 
 .hero h1 {
-    font-size: 36px;
-    color: #fff;
+    font-size: 48px;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .hero p {
-    color: #9ca3af;
+    color: #94a3b8;
 }
 
 .profile {
-    width: 120px;
+    width: 130px;
     border-radius: 50%;
-    margin-top: 15px;
+    margin-top: 20px;
+    border: 2px solid #38bdf8;
 }
 
 /* SECTION */
 .section {
-    margin-top: 50px;
+    margin-top: 60px;
+    padding: 20px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.05);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s;
 }
 
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TITLES */
 h2 {
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-p {
-    color: #9ca3af;
+    color: #38bdf8;
 }
 
 /* GRID */
@@ -63,40 +77,44 @@ p {
     gap: 20px;
 }
 
-/* DESKTOP GRID */
-@media (min-width: 768px) {
+@media (min-width:768px){
     .grid {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .hero h1 {
-        font-size: 48px;
     }
 }
 
 /* IMAGE */
 img {
     width: 100%;
-    border-radius: 10px;
-    transition: 0.4s;
+    border-radius: 12px;
+    transition: 0.5s;
 }
 
 img:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
-/* LIST */
-ul {
-    color: #9ca3af;
+/* PROJECT CARD */
+.card {
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* TEXT */
+p, li {
+    color: #94a3b8;
     line-height: 1.6;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 30px;
-    color: #666;
+    padding: 40px;
+    color: #64748b;
 }
+
 </style>
 </head>
 
@@ -110,70 +128,99 @@ footer {
     <p>Civil Design Engineer | BIM Modeler</p>
     <img src="profile.jpg" class="profile">
 
-    <p>📍 Ballari, Karnataka</p>
+    <p>📍 Ballari, Karnataka, India</p>
     <p>📞 +91 7019830916</p>
     <p>✉️ yasirkhansyz0602@gmail.com</p>
 </div>
 
 <!-- ABOUT -->
 <div class="section">
-    <h2>About</h2>
+    <h2>About Me</h2>
     <p>
-    Civil Engineering graduate skilled in BIM modeling, architectural planning, and site execution.
+    Civil Engineering graduate focused on BIM modeling and modern construction workflows.
+    Experienced in creating 2D drawings, 3D BIM models, and coordinating architectural and MEP systems.
     </p>
 </div>
 
 <!-- SKILLS -->
 <div class="section">
     <h2>Skills</h2>
-    <p>AutoCAD | Revit | Navisworks | BIM | RCC</p>
+    <p>AutoCAD | Revit Architecture | Revit Structure | Revit MEP | Navisworks | BIM Coordination</p>
 </div>
 
 <!-- EXPERIENCE -->
 <div class="section">
     <h2>Experience</h2>
-    <p>Sri Sai Gandhi Construction – Site Work</p>
+    <p><strong>Sri Sai Gandhi Construction</strong></p>
+    <p>Worked on site execution, supervision, and basic RCC activities.</p>
 </div>
 
 <!-- ACADEMIC PROJECT -->
 <div class="section">
     <h2>Academic Project</h2>
-    <p><strong>3BHK Duplex BIM Project</strong></p>
+    <p><strong>3BHK Duplex Residential BIM Project</strong></p>
+
     <ul>
-        <li>2D drawings using AutoCAD</li>
-        <li>3D BIM model using Revit</li>
-        <li>Clash detection using Navisworks</li>
-        <li>Quantity takeoff for structural elements</li>
+        <li>Developed complete 2D drawings using AutoCAD (plans, sections, elevations)</li>
+        <li>Created detailed 3D BIM model in Revit Architecture & Structure</li>
+        <li>Performed clash detection using Navisworks</li>
+        <li>Generated quantity takeoff for structural components</li>
     </ul>
 </div>
 
-<!-- HVAC -->
+<!-- HVAC PROJECT -->
 <div class="section">
-    <h2>HVAC Project</h2>
+    <h2>HVAC BIM Project (Office Building)</h2>
+    <p>
+    Developed HVAC system for a multi-floor office building using BIM tools. 
+    Focused on duct routing, system coordination, and clash-free design.
+    </p>
+
+    <p><strong>Tools Used:</strong> Revit MEP, Navisworks</p>
+
+    <ul>
+        <li>Designed HVAC duct layout for 3-floor office building</li>
+        <li>Coordinated with structural and architectural models</li>
+        <li>Performed clash detection and resolved conflicts</li>
+        <li>Ensured proper airflow routing and system alignment</li>
+    </ul>
 
     <div class="grid">
-        <div>
+
+        <div class="card">
             <img src="hvac1.jpg">
-            <p>3D HVAC Model</p>
+            <p>3D HVAC BIM Model</p>
         </div>
 
-        <div>
+        <div class="card">
             <img src="hvac2.jpg">
-            <p>Wireframe View</p>
+            <p>Hidden Line / Coordination View</p>
         </div>
+
     </div>
 </div>
 
-<!-- OTHER PROJECTS -->
+<!-- PROJECTS -->
 <div class="section">
     <h2>Projects</h2>
 
-    <img src="project1.jpg">
+    <div class="card">
+        <img src="project1.jpg">
+        <p>Modern Residential BIM Model</p>
+    </div>
 
     <div class="grid">
-        <img src="project2.jpg">
-        <img src="project3.jpg">
+        <div class="card">
+            <img src="project2.jpg">
+            <p>Residential Floor Planning</p>
+        </div>
+
+        <div class="card">
+            <img src="project3.jpg">
+            <p>Architectural Design Layout</p>
+        </div>
     </div>
+
 </div>
 
 </div>
@@ -181,6 +228,19 @@ footer {
 <footer>
     © 2026 Yasir Ahmed S
 </footer>
+
+<script>
+const sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            sec.classList.add('show');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
