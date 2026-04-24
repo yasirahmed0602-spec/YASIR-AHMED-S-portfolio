@@ -12,8 +12,8 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: radial-gradient(circle at top, #0f172a, #020617);
-    color: #e2e8f0;
+    background: radial-gradient(circle at 20% 20%, #1a1a1a, #000000 80%);
+    color: #e5e5e5;
     overflow-x: hidden;
 }
 
@@ -32,30 +32,33 @@ body {
 
 .hero h1 {
     font-size: 48px;
-    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    background: linear-gradient(90deg, #facc15, #f59e0b);
     -webkit-background-clip: text;
     color: transparent;
+    text-shadow: 0 0 20px rgba(250,204,21,0.2);
 }
 
 .hero p {
-    color: #94a3b8;
+    color: #9ca3af;
 }
 
 .profile {
     width: 130px;
     border-radius: 50%;
     margin-top: 20px;
-    border: 2px solid #38bdf8;
+    border: 2px solid #facc15;
+    box-shadow: 0 0 15px rgba(250,204,21,0.3);
 }
 
 /* SECTION */
 .section {
     margin-top: 60px;
-    padding: 20px;
-    background: rgba(255,255,255,0.03);
+    padding: 25px;
+    background: rgba(255,255,255,0.04);
     border-radius: 16px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
     opacity: 0;
     transform: translateY(40px);
     transition: 0.8s;
@@ -68,7 +71,8 @@ body {
 
 /* TITLES */
 h2 {
-    color: #38bdf8;
+    color: #facc15;
+    letter-spacing: 1px;
 }
 
 /* GRID */
@@ -92,11 +96,12 @@ img {
 
 img:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(250,204,21,0.2);
 }
 
-/* PROJECT CARD */
+/* CARD */
 .card {
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     padding: 15px;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.05);
@@ -104,7 +109,7 @@ img:hover {
 
 /* TEXT */
 p, li {
-    color: #94a3b8;
+    color: #9ca3af;
     line-height: 1.6;
 }
 
@@ -112,7 +117,7 @@ p, li {
 footer {
     text-align: center;
     padding: 40px;
-    color: #64748b;
+    color: #666;
 }
 
 </style>
