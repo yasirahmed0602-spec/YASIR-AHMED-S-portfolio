@@ -97,6 +97,7 @@ img:hover {
 
 p, li {
     color: #9ca3af;
+    line-height: 1.6;
 }
 
 footer {
@@ -116,6 +117,7 @@ footer {
 <div class="hero">
     <h1>Yasir Ahmed S</h1>
     <p>Civil Design Engineer | BIM Modeler</p>
+
     <img src="01-profile.jpg" class="profile">
 
     <p>📍 Ballari, Karnataka, India</p>
@@ -126,6 +128,7 @@ footer {
 <!-- ABOUT -->
 <div class="section">
     <h2>About Me</h2>
+
     <p>
     Civil Engineering graduate focused on BIM modeling and modern construction workflows.
     Experienced in creating 2D drawings, 3D BIM models, and coordinating architectural and MEP systems.
@@ -135,14 +138,22 @@ footer {
 <!-- SKILLS -->
 <div class="section">
     <h2>Skills</h2>
-    <p>AutoCAD | Revit Architecture | Revit Structure | Revit MEP | Navisworks | BIM Coordination</p>
+
+    <p>
+    AutoCAD | Revit Architecture | Revit Structure |
+    Revit MEP | Navisworks | BIM Coordination
+    </p>
 </div>
 
 <!-- EXPERIENCE -->
 <div class="section">
     <h2>Experience</h2>
+
     <p><strong>Sri Sai Gandhi Construction</strong></p>
-    <p>Worked on site execution, supervision, and basic RCC activities.</p>
+
+    <p>
+    Worked on site execution, supervision, and basic RCC activities.
+    </p>
 </div>
 
 <!-- REVIT PROJECT -->
@@ -164,6 +175,7 @@ footer {
     </ul>
 
     <div class="grid">
+
         <div class="card">
             <img src="02-revit-before.jpg">
             <p>Before Rendering (Concept Model)</p>
@@ -173,6 +185,7 @@ footer {
             <img src="03-revit-after.jpg">
             <p>After Rendering (Final Output)</p>
         </div>
+
     </div>
 </div>
 
@@ -194,6 +207,7 @@ footer {
     </ul>
 
     <div class="grid">
+
         <div class="card">
             <img src="04-hvac1.jpg">
             <p>3D HVAC Model</p>
@@ -203,30 +217,66 @@ footer {
             <img src="05-hvac2.jpg">
             <p>Coordination View</p>
         </div>
+
+    </div>
+</div>
+
+<!-- AUTOCAD PROJECT -->
+<div class="section">
+    <h2>AutoCAD Residential Planning Project</h2>
+
+    <p>
+    Developed detailed G+3 residential planning drawings using AutoCAD,
+    including floor layouts, dimensions, circulation planning,
+    and architectural detailing.
+    </p>
+
+    <p><strong>Tools Used:</strong> AutoCAD</p>
+
+    <ul>
+        <li>Prepared detailed residential floor plans</li>
+        <li>Created dimensioning and space planning layouts</li>
+        <li>Improved circulation and functional zoning</li>
+        <li>Produced clean drafting and technical detailing</li>
+    </ul>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="09-project4.jpg">
+            <p>Detailed Residential CAD Floor Plan</p>
+        </div>
+
+        <div class="card">
+            <img src="10-project5.jpg">
+            <p>G+3 Residential Planning Layout</p>
+        </div>
+
     </div>
 </div>
 
 <!-- OTHER PROJECTS -->
 <div class="section">
-    <h2>CAD AND REVIT ARCHITECTURE PROJRCTS</h2>
+    <h2>Other Projects</h2>
 
     <div class="card">
         <img src="06-project1.jpg">
-        <p>Modern Residential cad Design</p>
+        <p>Modern Residential Design</p>
     </div>
 
     <div class="grid">
+
         <div class="card">
             <img src="07-project2.jpg">
-            <p>Cad Floor Plan Design</p>
+            <p>Floor Plan Design</p>
         </div>
 
         <div class="card">
             <img src="08-project3.jpg">
             <p>Architectural Layout</p>
         </div>
-    </div>
 
+    </div>
 </div>
 
 </div>
@@ -241,6 +291,7 @@ const sections = document.querySelectorAll('.section');
 window.addEventListener('scroll', () => {
     sections.forEach(sec => {
         const top = sec.getBoundingClientRect().top;
+
         if(top < window.innerHeight - 100){
             sec.classList.add('show');
         }
